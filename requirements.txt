@@ -1,0 +1,7 @@
+bit
+ecdsa
+mnemonic
+pandas
+requests
+jupyterlab
+matplotlib
