@@ -127,8 +127,50 @@ Let’s try an invalid seed phrase (manually constructed):
 
 ---
 
+## Fraction of Possible Combinations that are Valid Seed Phrases
+
+While there are many possible combinations of words from the BIP-39 wordlist, only a small fraction of these are valid seed phrases due to the checksum mechanism.
+
+### Word Count and Entropy
+
+BIP-39 seed phrases can have different lengths, each associated with a specific amount of entropy and a corresponding checksum.
+
+| Seed Phrase Length | Entropy Length | Checksum Length | Total Length (Entropy + Checksum) |
+|--------------------|----------------|-----------------|-----------------------------------|
+| 12 words           | 128 bits       | 4 bits          | 132 bits                          |
+| 15 words           | 160 bits       | 5 bits          | 165 bits                          |
+| 18 words           | 192 bits       | 6 bits          | 198 bits                          |
+| 21 words           | 224 bits       | 7 bits          | 231 bits                          |
+| 24 words           | 256 bits       | 8 bits          | 264 bits                          |
+
+### Why Only a Fraction are Valid
+
+For each seed phrase, the checksum is computed from the entropy and appended to it. This checksum ensures that not every combination of BIP-39 words is valid—only those combinations where the checksum matches the entropy are considered valid.
+
+The size of the checksum determines how many combinations of words are valid out of all the possible combinations.
+
+- **12-word seed phrase**: Only 1 in 16 (2^4) possible combinations of words are valid.
+- **15-word seed phrase**: Only 1 in 32 (2^5) possible combinations are valid.
+- **18-word seed phrase**: Only 1 in 64 (2^6) possible combinations are valid.
+- **21-word seed phrase**: Only 1 in 128 (2^7) possible combinations are valid.
+- **24-word seed phrase**: Only 1 in 256 (2^8) possible combinations are valid.
+
+### Example Calculation for a 12-Word Seed Phrase:
+
+- The BIP-39 wordlist contains 2048 words.
+- For a 12-word seed phrase, there are \(2048^{12}\) total possible combinations of words, which equals approximately \( 10^{39} \) combinations.
+- However, due to the 4-bit checksum, only 1 out of every 16 combinations is valid.
+
+Thus, the number of **valid** 12-word seed phrases is:
+\[
+\frac{2048^{12}}{16} \approx 5.44 \times 10^{37}
+\]
+
+This ensures that even though there are many potential word combinations, the checksum mechanism drastically reduces the number of valid seed phrases, making it harder to randomly generate a valid one.
+
 ### Key Takeaways:
 
 - Even if the seed phrase contains valid BIP-39 words, the **checksum** is crucial for ensuring the integrity of the phrase.
 - In both cases, we manually recomputed the checksum from the entropy and compared it to the original checksum.
 - The checksum mismatch indicates that the seed phrase is **invalid**.
+- The checksum mechanism in BIP-39 ensures that only a small fraction of possible combinations are valid seed phrases, significantly enhancing security by preventing random or malformed seed phrases from being used.
