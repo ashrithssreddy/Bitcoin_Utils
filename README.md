@@ -18,7 +18,7 @@ This repository serves as a comprehensive suite of data science utilities and to
 - **Seed phrase validation (BIP-39)**
 - **Portfolio management with Bitcoin exposure**
 
-### **Features**
+### **Key Features**
 
 - **Dynamic Bitcoin Transaction Fee Estimator**:
   Leverages mempool data to provide accurate fee estimations, enabling users to optimize transaction costs based on current network conditions. Supports priority-based fee calculations (e.g., low, medium, high priority).
