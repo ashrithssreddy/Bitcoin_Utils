@@ -1,4 +1,5 @@
 # **Bitcoin Utilities (bitcoin_utils)**
+This repository serves as a comprehensive suite of data science utilities and tools tailored to the Bitcoin ecosystem. It is designed for developers, quantitative analysts, and crypto enthusiasts who seek advanced solutions for:
 
 ### **Overview**
 [![Bitcoin](https://img.shields.io/badge/Bitcoin-BTC-yellow.svg?logo=bitcoin)](https://bitcoin.org)
@@ -8,17 +9,13 @@
 [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/ashrithssreddy/bitcoin_utils)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ashrithssreddy/bitcoin_utils)
 
-
-
-
-This repository serves as a comprehensive suite of data science utilities and tools tailored to the Bitcoin ecosystem. It is designed for developers, quantitative analysts, and crypto enthusiasts who seek advanced solutions for:
-
 - **Bitcoin transaction optimization**
 - **Dynamic fee calculation based on mempool data**
 - **Seed phrase validation (BIP-39)**
 - **Portfolio management with Bitcoin exposure**
 
 ### **Key Features**
+---
 
 - **Dynamic Bitcoin Transaction Fee Estimator**:
   Leverages mempool data to provide accurate fee estimations, enabling users to optimize transaction costs based on current network conditions. Supports priority-based fee calculations (e.g., low, medium, high priority).
