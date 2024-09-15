@@ -4,13 +4,11 @@
 
 Bitcoin uses **Elliptic Curve Cryptography (ECC)**, specifically the **secp256k1** curve. This curve is defined by the following equation:
 
-\[
-y^2 = x^3 + 7 \ (\text{mod} \ p)
-\]
+**𝑦² = 𝑥³ + 7 (mod 𝑝)**
 
 Where:
-- \( p = 2^{256} - 2^{32} - 977 \), a prime number defining the finite field.
-- \( x \) and \( y \) are coordinates representing points on the elliptic curve.
+- **𝑝 = 2²⁵⁶ − 2³² − 977** is a prime number that defines the finite field.
+- **𝑥** and **𝑦** are the coordinates of points on the elliptic curve.
 
 Public keys in Bitcoin are points on this elliptic curve. To ensure the validity of a public key, it must satisfy this equation, meaning it must correspond to a valid point on the secp256k1 curve.
 
