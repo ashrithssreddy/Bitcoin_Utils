@@ -168,6 +168,8 @@ Thus, the number of **valid** 12-word seed phrases is:
 
 This ensures that even though there are many potential word combinations, the checksum mechanism drastically reduces the number of valid seed phrases, making it harder to randomly generate a valid one.
 
+---
+
 ### Key Takeaways:
 
 - Even if the seed phrase contains valid BIP-39 words, the **checksum** is crucial for ensuring the integrity of the phrase.
