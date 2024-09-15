@@ -38,6 +38,7 @@ pip install -r requirements.txt
 ```
 
 ### **How to Use**
+---
 
 #### 1. **Dynamic Fee Estimation**
 
