@@ -1,7 +1,12 @@
 # **Bitcoin Utilities (bitcoin_utils)**
 
 ### **Overview**
-
+[![Bitcoin](https://img.shields.io/badge/Bitcoin-BTC-yellow.svg?logo=bitcoin)](https://bitcoin.org)
+[![Project Status](https://img.shields.io/badge/Project%20Status-In%20Progress-green)](https://github.com/ashrithssreddy/bitcoin_utils)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue)](https://www.python.org/downloads/)
+[![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/ashrithssreddy/bitcoin_utils)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ashrithssreddy/bitcoin_utils)
 This repository serves as a comprehensive suite of data science utilities and tools tailored to the Bitcoin ecosystem. It is designed for developers, quantitative analysts, and crypto enthusiasts who seek advanced solutions for:
 
 - **Bitcoin transaction optimization**
