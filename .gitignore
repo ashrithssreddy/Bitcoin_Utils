@@ -9,7 +9,7 @@ __pycache__/
 .DS_Store
 
 # Ignore the config directory
-config/
+config.json
 
 # Distribution / packaging
 .Python
