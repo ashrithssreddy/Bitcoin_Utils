@@ -9,7 +9,7 @@ __pycache__/
 .DS_Store
 
 # Ignore the config directory
-passwords.json
+config/
 
 # Distribution / packaging
 .Python
