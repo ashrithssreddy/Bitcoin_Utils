@@ -2,98 +2,97 @@
 
 ## Must Know
 
-### 1. **Blockchain** (Also known as: Distributed Ledger)
-A decentralized digital ledger that records transactions across many computers. Every transaction is added as a "block" in a chain, hence the name.
+### 1. **Blockchain**
+A **blockchain**, also known as a **distributed ledger**, is a decentralized digital ledger that records transactions across many computers in a way that ensures transparency and security. Each transaction is grouped into a "block" and linked chronologically, forming a "chain" of records.
 
-### 2. **Wallet** (Also known as: Digital Wallet, Crypto Wallet)
-A digital tool used to store, send, and receive cryptocurrency. Wallets can be hardware-based (physical devices) or software-based (apps).
+### 2. **Wallet**
+A **crypto wallet** (also referred to as a **digital wallet**) is a tool used to store, send, and receive cryptocurrency. Wallets can either be software-based (such as mobile apps or desktop applications) or hardware-based (physical devices that store keys offline).
 
-### 3. **Private Key** (Also known as: Secret Key, Private Code)
-A secure code that allows you to access and manage your cryptocurrency. **Never share your private key with anyone**.
+### 3. **Private Key**
+A **private key** (sometimes called a **secret key** or **private code**) is a string of characters that acts like a password, giving you access to your cryptocurrency holdings. Losing or sharing this key can result in losing control over your crypto, so it's crucial to keep it secure.
 
-### 4. **Public Key** (Also known as: Wallet Address, Receiving Address)
-An address that others can use to send cryptocurrency to you. It’s like your bank account number.
+### 4. **Public Key**
+A **public key** (or **wallet address**/**receiving address**) is like your account number. It is a string of characters that you can share with others to receive cryptocurrency.
 
-### 5. **Exchange** (Also known as: Crypto Exchange, Trading Platform)
-A platform where you can buy, sell, or trade cryptocurrencies. Examples include Binance, Coinbase, and ZebPay.
+### 5. **Exchange**
+A **crypto exchange** (alternatively called a **trading platform**) is an online service where you can buy, sell, or trade cryptocurrencies. Popular exchanges include Binance, Coinbase, and ZebPay.
 
-### 6. **Fiat Currency** (Also known as: Traditional Currency, Government-Issued Money)
-Traditional government-issued currency like the US Dollar (USD), Euro (EUR), or Indian Rupee (INR).
+### 6. **Fiat Currency**
+**Fiat currency** refers to traditional government-issued money like the US Dollar (USD), Euro (EUR), or Indian Rupee (INR). Fiat currencies have value because governments maintain them, while cryptocurrencies derive their value from supply, demand, and their underlying blockchain.
 
-### 7. **Stablecoin** (Also known as: Pegged Cryptocurrency)
-Cryptocurrencies pegged to the value of traditional fiat currencies, like USDC or USDT, maintaining a stable value, typically 1:1 with the US dollar.
+### 7. **Stablecoin**
+A **stablecoin** (also known as a **pegged cryptocurrency**) is a type of cryptocurrency that has its value pegged to a more stable asset, like a fiat currency (e.g., USDC is pegged to USD). This reduces the volatility seen in other cryptocurrencies.
 
-### 8. **Gas Fee** (Also known as: Transaction Fee, Network Fee)
-A small fee paid to process transactions on a blockchain, particularly on Ethereum. Gas fees compensate miners or validators for securing the network.
+### 8. **Gas Fee**
+A **gas fee** (also called a **transaction fee** or **network fee**) is a small fee paid to complete a transaction on the blockchain. For instance, on Ethereum, gas fees are used to compensate miners for processing transactions and securing the network.
 
-### 9. **Transaction Hash (TxID)** (Also known as: Transaction ID)
-A unique identifier for each transaction on a blockchain. It can be used to track the status of your crypto transfer.
+### 9. **Transaction Hash (TxID)**
+A **transaction hash** (also referred to as a **TxID** or **transaction ID**) is a unique identifier for a specific cryptocurrency transaction. It can be used to track the transaction’s status on a blockchain explorer.
 
-### 10. **Seed Phrase** (Also known as: Recovery Phrase, Backup Phrase)
-A series of words that allows you to recover your crypto wallet if it's lost. **Keep this safe** and never share it.
+### 10. **Seed Phrase**
+A **seed phrase** (or **recovery phrase**/**backup phrase**) is a series of words generated when you set up a crypto wallet. This phrase can be used to restore access to your wallet if you lose it. It’s crucial to store your seed phrase securely and never share it with anyone.
 
-### 11. **Two-Factor Authentication (2FA)** (Also known as: Multi-Factor Authentication)
-An added layer of security that requires not just a password but also a secondary verification (like a text message code) to access an account.
+### 11. **Two-Factor Authentication (2FA)**
+**Two-factor authentication** (or **multi-factor authentication**) is a security feature that requires users to provide two forms of verification (e.g., a password and a code sent to your phone) to access their accounts, adding an extra layer of security.
 
 ---
 
 ## Good to Know
 
-### 1. **Altcoin** (Also known as: Alternative Coin, Non-Bitcoin Crypto)
-Any cryptocurrency that is not Bitcoin. Examples include Ethereum (ETH), Ripple (XRP), and Litecoin (LTC).
+### 1. **Altcoin**
+An **altcoin** (short for **alternative coin**) refers to any cryptocurrency other than Bitcoin. Examples include Ethereum (ETH), Ripple (XRP), and Litecoin (LTC).
 
-### 2. **Cold Storage** (Also known as: Offline Storage, Hardware Wallet Storage)
-Storing your cryptocurrency offline, typically using a hardware wallet, for enhanced security.
+### 2. **Cold Storage**
+**Cold storage** (also referred to as **offline storage** or **hardware wallet storage**) is the practice of storing cryptocurrency in a wallet that is not connected to the internet, offering greater protection from hackers.
 
-### 3. **Hot Wallet** (Also known as: Online Wallet)
-A cryptocurrency wallet that is connected to the internet. While convenient for frequent transactions, it is more vulnerable to hacking compared to cold storage.
+### 3. **Hot Wallet**
+A **hot wallet** (also known as an **online wallet**) is a crypto wallet that is connected to the internet. Hot wallets are more convenient for frequent transactions but are also more vulnerable to hacking.
 
-### 4. **Mining** (Also known as: Bitcoin Mining, Proof of Work)
-The process by which new cryptocurrency is generated and transactions are verified on a blockchain. Miners solve complex math problems to secure the network.
+### 4. **Mining**
+**Mining** (sometimes referred to as **Bitcoin mining** or **Proof of Work**) is the process of verifying and adding new transactions to a blockchain, typically through complex computational puzzles. Miners are rewarded with new coins for their efforts.
 
-### 5. **Staking** (Also known as: Proof of Stake, Crypto Staking)
-The process of participating in a proof-of-stake (PoS) blockchain by locking up your coins to support the network and earn rewards.
+### 5. **Staking**
+**Staking** (also known as **crypto staking** or **Proof of Stake**) is a way to participate in a blockchain network by locking up your cryptocurrency to help validate transactions. In return, you can earn rewards, similar to earning interest.
 
-### 6. **Token** (Also known as: Crypto Token, Digital Token)
-A type of cryptocurrency that represents an asset or utility, often created on existing blockchains like Ethereum.
+### 6. **Token**
+A **token** (sometimes called a **crypto token** or **digital token**) is a type of cryptocurrency that represents an asset or utility, often built on top of existing blockchain platforms like Ethereum.
 
 ### 7. **ERC-20 Token**
-A standard used on the Ethereum blockchain for creating tokens. USDC and many other tokens follow this standard.
+An **ERC-20 token** is a technical standard used on the Ethereum blockchain for smart contracts and token creation. Many popular tokens, such as USDC, follow this standard.
 
-### 8. **Proof of Work (PoW)** 
-A consensus mechanism that requires miners to solve computational puzzles to validate transactions and add them to the blockchain (used by Bitcoin).
+### 8. **Proof of Work (PoW)**
+**Proof of Work (PoW)** is a consensus algorithm used by blockchains like Bitcoin. Miners compete to solve complex math problems, and the first to solve it gets to add the block to the chain and is rewarded with cryptocurrency.
 
 ### 9. **Proof of Stake (PoS)**
-A consensus mechanism where validators are chosen to create new blocks based on the number of coins they hold and are willing to "stake" as collateral.
+**Proof of Stake (PoS)** is a consensus algorithm in which validators are chosen based on the number of coins they hold and are willing to "stake." This method is more energy-efficient than Proof of Work.
 
-### 10. **Smart Contract** (Also known as: Self-Executing Contract)
-A self-executing contract with the terms directly written into lines of code. It automates transactions on a blockchain.
+### 10. **Smart Contract**
+A **smart contract** (or **self-executing contract**) is a piece of code on the blockchain that automatically enforces the rules of a contract when certain conditions are met. Smart contracts eliminate the need for intermediaries.
 
 ---
 
 ## Great to Know
 
-### 1. **Decentralized Finance (DeFi)** (Also known as: Open Finance)
-Financial services (like lending or trading) that run on blockchain technology without the need for traditional intermediaries like banks.
+### 1. **Decentralized Finance (DeFi)**
+**Decentralized finance** (often called **DeFi** or **open finance**) refers to financial services that are built on blockchain technology, enabling things like lending, borrowing, and trading without traditional intermediaries like banks.
 
-### 2. **NFT (Non-Fungible Token)** (Also known as: Digital Collectible, Unique Token)
-A type of digital asset that represents ownership of a unique item, such as art, music, or collectibles.
+### 2. **NFT (Non-Fungible Token)**
+An **NFT** (or **digital collectible**/**unique token**) is a type of digital asset that represents ownership of a unique item, like art, music, or virtual real estate. NFTs are often traded on blockchain platforms like Ethereum.
 
-### 3. **Fork** (Also known as: Blockchain Fork, Hard Fork, Soft Fork)
-When a blockchain splits into two separate chains due to differences in the network’s rules. A famous example is the split between Bitcoin and Bitcoin Cash.
+### 3. **Fork**
+A **fork** (or **blockchain fork**) occurs when a blockchain splits into two separate chains due to disagreements in the network’s rules. A famous example is the split between Bitcoin and Bitcoin Cash, which created two separate blockchains.
 
-### 4. **Liquidity** (Also known as: Market Liquidity)
-The ease with which a cryptocurrency can be bought or sold without affecting its price. High liquidity means easier transactions.
+### 4. **Liquidity**
+**Liquidity** (also known as **market liquidity**) refers to how easily a cryptocurrency can be bought or sold without affecting its price. Highly liquid markets make transactions smoother.
 
 ### 5. **Dapp (Decentralized Application)**
-Applications that run on blockchain networks (like Ethereum) rather than on centralized servers.
+A **Dapp** (short for **decentralized application**) is a software application that runs on a blockchain, such as Ethereum. Unlike traditional apps, Dapps are decentralized and don’t rely on a single server.
 
-### 6. **Base Layer (Layer 1)** 
-The foundational layer of a blockchain, like Ethereum or Bitcoin, where transactions and smart contracts are processed.
+### 6. **Base Layer (Layer 1)**
+The **base layer** (or **Layer 1**) refers to the foundational blockchain, such as Ethereum or Bitcoin, where transactions and smart contracts are processed.
 
 ### 7. **Layer 2**
-Solutions built on top of Layer 1 blockchains to improve scalability, speed, and cost-efficiency (e.g., Lightning Network on Bitcoin).
+**Layer 2** solutions are built on top of Layer 1 blockchains to improve scalability, speed, and cost-efficiency. For example, the Lightning Network is a Layer 2 solution for Bitcoin.
 
-### 8. **Gas Limit** 
-The maximum amount of gas (or transaction fees) a user is willing to pay for a transaction on the Ethereum network.
-
+### 8. **Gas Limit**
+The **gas limit** is the maximum amount of gas (or transaction fees) that a user is willing to pay for a transaction on a blockchain like Ethereum. Setting a higher gas limit can speed up transactions.
