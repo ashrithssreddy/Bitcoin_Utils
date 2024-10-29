@@ -3,9 +3,11 @@
 
 ## Private Key and Seed Phrase
 
-A **private key** is like a secret password that gives you full control over your Bitcoin. Anyone with access to your private key can spend the Bitcoin associated with it, so keeping it secure is absolutely crucial.
+A **private key** is like a secret password that gives you full control over your Bitcoin. Private keys are generated once during the creation of a wallet, and anyone with access to your private key can spend the Bitcoin associated with it, so keeping it secure is absolutely crucial.
 
-A **seed phrase** (or recovery phrase) is a series of 12-24 words that can be used to regenerate your private key. Think of the seed phrase as the "backup" of your wallet. If you lose your private key, you can still regain access to your funds using the seed phrase.
+A **seed phrase** (or recovery phrase) is a series of 12-24 words that can be used to regenerate your private key. Think of the seed phrase as the "backup" of your wallet. The seed phrase is a more practical way to memorize or store information compared to the private key, as it is easier to handle. It is also important to note that the direction of generation is one-way: the seed phrase generates the private key, but the private key cannot be used to recreate the seed phrase.
+
+**Not your keys, not your coins**: Anyone who gains access to your private key or seed phrase will have full control over your Bitcoin. This is why it is essential to keep these secure and private.
 
 ### Examples
 - Private keys are typically long alphanumeric strings like: `5J3mBbAH58CerZLKkss4mBHTaue2c8sF4K6qv2T95sqzSje4xA`.
@@ -39,7 +41,7 @@ For more technical details on how public keys are generated, you can refer to th
 
 ### Example
 - Below is an example of what a Bitcoin wallet QR code might look like:
-  ![QR Code Example](https://example.com/qr-code.png) *(For illustration purposes)*
+  ![QR Code Example](http://cryptowales.co.uk/wp-content/uploads/2018/08/Private-Keys.png)
 
 ### Security Note
 - Always **double-check** the address after scanning to ensure it matches the intended recipient, as there are malware programs that attempt to alter addresses.
