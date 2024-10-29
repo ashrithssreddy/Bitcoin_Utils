@@ -40,14 +40,22 @@ For more technical details on how public keys are generated, you can refer to th
 ### Public Key Types
 
 | **Public Key Type**        | **Description**                                       | **Example Format**                        | **Usage**                         | **Wallet Apps Supporting This Type**                    |
-|----------------------------|-------------------------------------------------------|-------------------------------------------|-----------------------------------|----------------------------------------------------------|
-| **Legacy (P2PKH)**         | Public key used in older Bitcoin addresses.           | Address starts with `1`, e.g., `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` | Legacy addresses, still widely recognized. | Electrum, Mycelium, Cash App                             |
-| **P2SH (Pay to Script Hash)** | Public key represented in a script form, enabling complex spending conditions like multi-sig. | Address starts with `3`, e.g., `3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5` | Common for multi-sig transactions. | Ledger, Trezor, Electrum                                  |
-| **SegWit (Bech32)**        | Native SegWit key type for **lower transaction fees**. | Address starts with `bc1`, e.g., `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq` | Used to reduce fees and support SegWit transactions. | Ledger, BlueWallet, Wasabi Wallet                         |
-| **Lightning**              | Lightning public key for Layer 2 transactions.         | Generally different format as it’s used in payment channels. | Used for fast, low-cost transactions. | Phoenix Wallet, Muun, Wallet of Satoshi                   |
-| **Compressed**             | Shortened version of the public key (33 bytes).       | `02b1d5efb6c8392e9b66cd8545d6c8d01e64c7b94c7b6b14922f31ebff3a2b0e12` | Widely used; more efficient.      | Electrum, Ledger, Trezor                                  |
-| **Uncompressed**           | Full public key (65 bytes).                           | `04b1d5efb6c8392e9b66cd8545d6c8d01e64c7b94c7b6b14922f31ebff3a2b0e1234e3d5ef2f9a3b5d3b7e2d9e9c9b3a5c1f4d6e8` | Less common; used in early days.  | Bitcoin Core, Armory                                      |
-| **Multi-Signature**        | Generated for multi-sig wallets requiring multiple keys to authorize a transaction. | Combination of keys such as `02b1d...` + `03c7f...` | Used for shared wallets or added security. | Electrum, Trezor, Armory                                  |
+|----------------------------|-------------------------------------------------------|------...------|-----------------------------------|----------------------------------------------------------|
+
+| **Legacy (P2PKH)**         | Public key used in older Bitcoin addresses.           |Addres...ivfNa`| Legacy addresses, still widely recognized. | Electrum, Mycelium, Cash App                             |
+
+| **P2SH (Pay to Script Hash)** | Public key represented in a script form, enabling complex spending conditions like multi-sig. |Addres...ktZc5`| Common for multi-sig transactions. | Ledger, Trezor, Electrum                                  |
+
+| **SegWit (Bech32)**        | Native SegWit key type for **lower transaction fees**. |Addres...f5mdq`| Used to reduce fees and support SegWit transactions. | Ledger, BlueWallet, Wasabi Wallet                         |
+
+| **Lightning**              | Lightning public key for Layer 2 transactions.         |Genera...nnels.| Used for fast, low-cost transactions. | Phoenix Wallet, Muun, Wallet of Satoshi                   |
+
+| **Compressed**             | Shortened version of the public key (33 bytes).       |`02b1d...b0e12`| Widely used; more efficient.      | Electrum, Ledger, Trezor                                  |
+
+| **Uncompressed**           | Full public key (65 bytes).                           |`04b1d...4d6e8`| Less common; used in early days.  | Bitcoin Core, Armory                                      |
+
+| **Multi-Signature**        | Generated for multi-sig wallets requiring multiple keys to authorize a transaction. |Combin...7f...`| Used for shared wallets or added security. | Electrum, Trezor, Armory                                  |
+
 
 ### Cross-Compatibility in Different Wallets
 If you load your wallet's private key or seed phrase into another Bitcoin wallet app, it should regenerate your addresses and allow you to receive BTC across all the address types it supports. However, the app's compatibility with different address types depends on its feature set. Most modern wallets support multiple address formats, including Legacy, SegWit, and Bech32, but not all wallets allow you to choose the address type for every transaction.
