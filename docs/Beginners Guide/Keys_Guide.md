@@ -20,7 +20,7 @@ A **seed phrase** (or recovery phrase) is a series of 12-24 words that can be us
 
 For more information on keeping your private key secure, check out this [guide on seed phrases](https://bitcoin.org/en/protect-your-privacy).
 
-## Public Key
+## Public Keys
 
 A **public key** is mathematically derived from your private key. It’s used to generate your **Bitcoin address**, which is like your account number where others can send Bitcoin to you. Unlike a private key, sharing your public key does not compromise the security of your funds.
 
@@ -37,7 +37,7 @@ Public keys ensure privacy and security, as they are one-way generated from the 
 
 For more technical details on how public keys are generated, you can refer to this [detailed explanation on elliptic curve cryptography](https://en.bitcoin.it/wiki/Elliptic_Curve_Digital_Signature_Algorithm).
 
-## Types of Public Keys and Wallet Support
+### Public Key Types
 
 | **Public Key Type**        | **Description**                                       | **Example Format**                        | **Usage**                         | **Wallet Apps Supporting This Type**                    |
 |----------------------------|-------------------------------------------------------|-------------------------------------------|-----------------------------------|----------------------------------------------------------|
