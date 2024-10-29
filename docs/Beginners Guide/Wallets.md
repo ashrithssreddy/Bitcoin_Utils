@@ -2,24 +2,37 @@
 # Wallets
 
 ## Wallets - Types
-Bitcoin wallets are essential for storing, sending, and receiving Bitcoin securely. There are different types of wallets, each with its unique features and security considerations.
+Bitcoin wallets are essential for storing, sending, and receiving Bitcoin securely. Different types of wallets cater to varying needs for security and convenience.
 
 ### Hot vs. Cold Wallets
-- **Hot Wallets**: These are connected to the internet, making them convenient but more susceptible to attacks. Suitable for daily use and small amounts.
-- **Cold Wallets**: These are offline storage solutions, such as hardware wallets or paper wallets, providing higher security for larger amounts.
+- **Hot Wallets**: Connected to the internet, making them convenient but more susceptible to attacks. Ideal for small, frequent transactions.
+  ![Hot Wallet Example](https://example.com/hot_wallet_image.jpg)
+  - Examples: **Trust Wallet**, **MetaMask** (easy to set up and use, great for small amounts).
+- **Cold Wallets**: Offline storage solutions, such as hardware wallets or paper wallets, providing better security for storing larger amounts.
+  ![Cold Wallet Example](https://example.com/cold_wallet_image.jpg)
+  - Examples: **Ledger** and **Trezor** (designed for security, great for long-term storage).
 
 ### Restoring Wallets
-Restoring a wallet typically involves using a seed phrase (usually 12 or 24 words). It's crucial to keep this phrase safe as it can fully recover the wallet in case of loss or theft.
+Restoring a wallet involves using a **seed phrase** (usually 12 or 24 words). This phrase is the master key to your funds, so it's critical to store it securely. [How to Restore Your Wallet - Guide](https://example.com/wallet-restore-guide)
 
 ### Multi-Sig Wallets - What Are They?
-Multi-signature (multi-sig) wallets require multiple private keys to authorize a transaction, adding an additional layer of security. These wallets are often used for joint accounts or added protection for individuals.
+**Multi-signature (multi-sig)** wallets require multiple private keys to authorize transactions. This is particularly useful for:
+- Joint accounts, like a shared family wallet.
+- Added protection against a single point of failure.  
+  ![Multi-Sig Illustration](https://example.com/multi_sig_example.png)
+  
+  For example, a wallet might require 2 of 3 signatures to approve a transaction, improving security.
 
 ### Custodial vs. Non-Custodial Wallets
-- **Custodial Wallets**: Your private keys are held by a third party (e.g., an exchange). They are convenient but less secure because you rely on a third party.
-- **Non-Custodial Wallets**: You control your private keys, giving you full control over your funds. These wallets are considered more secure but require the user to be responsible for managing private keys.
+- **Custodial Wallets**: A third party (e.g., an exchange) controls your keys. Convenient, but you rely on someone else for security. Think of it as using a bank.
+  - Example: **Binance** or **Coinbase Wallet**.
+- **Non-Custodial Wallets**: You control your keys, giving you full ownership. It’s akin to keeping cash in your own safe.
+  - Example: **Exodus** or **Electrum** (where only you hold the keys).
+
+  ![Custodial vs. Non-Custodial](https://example.com/custodial_vs_noncustodial.jpg)
 
 ## Choosing a Wallet
-When choosing a wallet, it’s important to consider your specific needs, such as ease of use, security, and frequency of transactions.
+When choosing a wallet, consider factors like ease of use, security, and the intended purpose of the funds.
 
 ### Popular Apps - Examples
 - **Hot Wallets**: Trust Wallet, MetaMask
@@ -27,22 +40,30 @@ When choosing a wallet, it’s important to consider your specific needs, such a
 - **Mobile Wallets**: Cash App, BlueWallet
 
 ### Exchange vs. Wallet Difference
-Exchanges like Binance or Coinbase provide wallets, but they are custodial. A true wallet allows you to hold your own keys, providing full ownership and security of your funds.
+- **Exchange Wallet**: Provided by platforms like Binance. You don’t control the keys, and your funds are subject to the exchange’s terms and security.
+- **True Wallet**: Lets you hold your own keys, ensuring full ownership and autonomy over your funds.
 
 ## Example Scenario
-Imagine you want to store some Bitcoin you just purchased. You could:
-1. Set up a hot wallet for immediate use, like making small purchases.
-2. Store the majority in a cold wallet for added security.
-3. Back up the seed phrase for restoring in case of device loss.
+Imagine you just bought some Bitcoin:
+1. **Hot Wallet**: Use it for small amounts and quick transactions, like paying for a coffee.
+   - Example: Store 0.01 BTC on **Trust Wallet** for quick spending.
+2. **Cold Wallet**: Use it for larger amounts that you intend to hold long-term.
+   - Example: Store 0.5 BTC on **Ledger** for maximum security.
+3. **Backup Seed Phrase**: Write down the seed phrase and keep it safe in multiple secure places. [Learn about Backup Strategies](https://example.com/backup-strategies).
 
 ## Wallet Security Best Practices
-Keeping your wallet secure is critical to avoid loss of funds. Here are some best practices:
+Securing your wallet is essential to protecting your Bitcoin. Follow these practices:
 
-- Use **hardware wallets** for significant amounts.
-- Avoid sharing your private keys with anyone.
-- Enable **two-factor authentication** (2FA) where applicable.
-- **Backup strategies**: Create multiple copies of your seed phrase and store them in secure locations. Learn more about backup strategies [here](https://example.com/backup-strategies).
+- **Hardware Wallets**: Use hardware wallets like Ledger for large amounts.
+- **2-Factor Authentication**: Enable 2FA to add an extra layer of security.
+- **Backup Strategies**: Keep multiple copies of your seed phrase in secure locations. Check out [this article on how to backup your wallet](https://example.com/backup-strategies).
+- **Avoid Phishing**: Be wary of unsolicited messages and double-check URLs before logging in.
+
+![Security Best Practices](https://example.com/security_best_practices.png)
 
 ## Paper Wallets - Disposable Ones for Privacy
-Paper wallets are physical documents that contain your private keys. They can be a good way to store Bitcoin offline, but require careful handling to avoid loss or theft.
+**Paper wallets** are physical documents that store your private keys. They are suitable for privacy-focused users wanting an offline, disposable wallet. However, they come with significant risks, such as:
+- **Physical Damage**: Paper can be easily damaged.
+- **Misplacement**: If lost or stolen, the funds are gone.
 
+[How to Create a Paper Wallet](https://example.com/paper-wallet-guide) - This guide provides step-by-step instructions for creating a secure paper wallet.
