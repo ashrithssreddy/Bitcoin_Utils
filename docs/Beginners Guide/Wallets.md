@@ -41,14 +41,6 @@ When choosing a wallet, consider factors like ease of use, security, and the int
 - **Exchange Wallet**: Provided by platforms like Binance. You don’t control the keys, and your funds are subject to the exchange’s terms and security.
 - **True Wallet**: Lets you hold your own keys, ensuring full ownership and autonomy over your funds.
 
-## Example Scenario
-Imagine you just bought some Bitcoin:
-1. **Hot Wallet**: Use it for small amounts and quick transactions, like paying for a coffee.
-   - Example: Store 0.01 BTC on **[Trust Wallet](https://trustwallet.com)** for quick spending.
-2. **Cold Wallet**: Use it for larger amounts that you intend to hold long-term.
-   - Example: Store 0.5 BTC on **Ledger** for maximum security.
-3. **Backup Seed Phrase**: Write down the seed phrase and keep it safe in multiple secure places. [Learn about Backup Strategies](
-
 ## Wallet Security Best Practices
 Securing your wallet is essential to protecting your Bitcoin. Follow these practices:
 
