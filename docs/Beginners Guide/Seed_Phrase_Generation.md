@@ -1,72 +1,77 @@
 
-# Key Generation from a 12-Word Seed Phrase
+# Using a 12-Word Seed Phrase to Generate Multi-Network Wallet Addresses
 
-This document explains how a single 12-word seed phrase can generate addresses and private keys for multiple blockchain networks.
+Let’s go through how a single 12-word seed phrase in your wallet enables it to securely generate addresses and private keys for different networks like Bitcoin, Ethereum, and Base.
 
 ---
 
 ## 1. Start with a 12-Word Seed Phrase
 
-Suppose your wallet gives you the following 12-word seed phrase:
+Suppose your wallet gives you this 12-word seed phrase:
 
 **Seed Phrase:**  
 "ocean gentle claw forest bamboo cradle spoon adapt dizzy arrow jump orphan"
 
-This phrase is the starting point. From this seed phrase, we can generate a master key that will help us derive private keys and addresses for different blockchains.
+This phrase is your wallet’s recovery phrase and the starting point for all key generation. But how does it convert into the keys and addresses for different networks?
 
 ---
 
-## 2. Generate the Master Key
+## 2. Seed Phrase to Master Key Conversion Process
 
-Using the seed phrase, the wallet software applies a mathematical function to generate the master private key and master chain code. These two together are called the master key pair. This is the "root" key pair, from which all other private keys are derived.
+**Process Name:** Key Derivation  
+**Function Used:** PBKDF2-HMAC-SHA512  
 
-For illustration purposes:
+Here’s what happens:
+
+1. The 12-word seed phrase is converted into a 512-bit binary seed using PBKDF2 (Password-Based Key Derivation Function 2) with the HMAC-SHA512 hashing algorithm.
+2. This binary seed, for example, might look like this:
+
+    `5eb00bbddcf069084889a8ab9155568165f5c518b32eb47b2e8a9430e6d7adfd888f8a2e0f95625b24dbdc1997c214b8d306b0834fe3e96d44a2a9ad0bd76098`
+
+3. This 512-bit seed is then used to create the master private key and master chain code, which together form the master key pair.
+
+These keys are the "parent" keys from which all other private keys are derived.
+
+Example of Master Key Pair:
 
 - **Master Private Key:** `xprv9s21ZrQH143K2BWUe8SuS2K8U9YfqpxGZzrc5XgKpqvwjF8rB9SuDnETV1sUzZ3LCxSxnVu46fkpQpeSCu5rsQnyPSF7tKGF9DKUcPgoWZ9`
 - **Master Chain Code:** `873dff81c02f525623fd1fe5144ebf9df55d6d56d1d785f2e2be9f3d5b1da52e`
 
-This master key is like a "parent key" and will be used to generate child keys for different blockchains.
+With the master key pair ready, we can now use it to derive specific private keys for each blockchain.
 
 ---
 
-## 3. Derive Keys and Addresses for Different Blockchains
+## 3. Master Key + Derivation Path to Derived Keys (BTC, ETH, Base)
 
-The wallet uses derivation paths (special formulas) to generate unique private keys and addresses for each network from the master key.
+**Process Name:** Child Key Derivation  
+**Function Used:** HMAC-SHA512 as part of the BIP-32 standard  
+
+Using BIP-32, the wallet software applies HMAC-SHA512 to the master private key, master chain code, and a derivation path (a unique identifier for each network) to generate unique child private keys and addresses for each blockchain.
 
 ### Example: Deriving Keys for Bitcoin (BTC)
 
-- **Derivation Path for BTC:** `m/44'/0'/0'/0/0`
-- **BTC Private Key (derived from master key):**  
-  `L1aW4aubDFB7yfras2S1mMEbsS5Djo4wtkFJ73rdDgkX1w79Vho8`
-- **BTC Address (generated from BTC private key):**  
-  `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa`
+- **Bitcoin Derivation Path:** `m/44'/0'/0'/0/0`
+- **BTC Private Key (derived from master key):** `L1aW4aubDFB7yfras2S1mMEbsS5Djo4wtkFJ73rdDgkX1w79Vho8`
+- **BTC Address (generated from BTC private key):** `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa`
 
-So, from the seed phrase, we derived a specific private key for Bitcoin, which in turn gave us a Bitcoin address. You can now use this address to send or receive BTC.
-
----
+The derivation path and master key together produce a private key for Bitcoin, which in turn generates a Bitcoin address. This address can now be used to send or receive BTC.
 
 ### Example: Deriving Keys for Ethereum (ETH)
 
-- **Derivation Path for ETH:** `m/44'/60'/0'/0/0`
-- **ETH Private Key (derived from master key):**  
-  `0x4c0883a69102937d6231471b5dbb6204fe51296170827963e29d01c8e99fcd10`
-- **ETH Address (generated from ETH private key):**  
-  `0x742d35Cc6634C0532925a3b844Bc454e4438f44e`
+- **Ethereum Derivation Path:** `m/44'/60'/0'/0/0`
+- **ETH Private Key (derived from master key):** `0x4c0883a69102937d6231471b5dbb6204fe51296170827963e29d01c8e99fcd10`
+- **ETH Address (generated from ETH private key):** `0x742d35Cc6634C0532925a3b844Bc454e4438f44e`
 
-Similarly, this private key corresponds to an Ethereum address, which is used for ETH and compatible tokens (like USDC, as it’s an ERC-20 token).
-
----
+This process produces a unique Ethereum private key and address, which is compatible with Ethereum tokens like ETH, USDC (an ERC-20 token), and more.
 
 ### Example: Deriving Keys for Base (Layer 2 Network)
 
-Since Base is an Ethereum-compatible network, it uses the same derivation path as Ethereum: `m/44'/60'/0'/0/0`
+Since Base is compatible with Ethereum, it uses the same derivation path as Ethereum: `m/44'/60'/0'/0/0`
 
-- **Base Private Key (same as Ethereum private key):**  
-  `0x4c0883a69102937d6231471b5dbb6204fe51296170827963e29d01c8e99fcd10`
-- **Base Address (same as Ethereum address):**  
-  `0x742d35Cc6634C0532925a3b844Bc454e4438f44e`
+- **Base Private Key (same as Ethereum private key):** `0x4c0883a69102937d6231471b5dbb6204fe51296170827963e29d01c8e99fcd10`
+- **Base Address (same as Ethereum address):** `0x742d35Cc6634C0532925a3b844Bc454e4438f44e`
 
-Because Base uses the same address format as Ethereum, the ETH private key can be used directly on the Base network.
+Since Base follows Ethereum standards, the ETH address generated is usable on Base as well.
 
 ---
 
@@ -80,6 +85,12 @@ Because Base uses the same address format as Ethereum, the ETH private key can b
 
 ---
 
-## How Your Wallet Uses This
+## Step-by-Step Summary of the Process
 
-When you open Coinbase Wallet and switch to Bitcoin, it looks up the BTC address using `m/44'/0'/0'/0/0`. When you switch to Ethereum or Base, it uses `m/44'/60'/0'/0/0` for both. This lets you hold multiple cryptocurrencies in one wallet, securely managed by a single 12-word seed phrase.
+| Step Description                            | Example Process                                                                                                                                                          |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **12-word Seed Phrase**                     | `ocean gentle claw forest bamboo cradle spoon adapt dizzy arrow jump orphan`                                                                                             |
+| **Seed Phrase to Master Key (Key Derivation)** | PBKDF2-HMAC-SHA512 produces a 512-bit binary seed (e.g., `5eb00bbddcf069084889a8ab9155568165f5c518b32eb47b2e8a9430e6d7adfd888f8a2e0f95625b24dbdc1997c214b8d306b0834fe3e96d44a2a9ad0bd76098`) and generates the master private key and master chain code |
+| **Master Key + BTC Derivation Path**        | `m/44'/0'/0'/0/0` generates BTC child private key → BTC address                                                                    |
+| **Master Key + ETH Derivation Path**        | `m/44'/60'/0'/0/0` generates ETH child private key → ETH address                                                                    |
+| **Master Key + Base Derivation Path**       | `m/44'/60'/0'/0/0` (same as ETH) generates Base child private key → Base address (same as ETH)                                     |
