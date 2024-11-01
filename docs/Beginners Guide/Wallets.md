@@ -58,75 +58,73 @@ Securing your wallet is essential to protecting your Bitcoin. Follow these pract
 ## Example Wallet Structure
 
 - **12-Word Seed Phrase** (Example): "cover toast rhythm equip bicycle proud bonus dinner frost spirit pond session"
-  - **Master Private Key (and Chain Code)**
-    - Example: `xprv9s21ZrQH143K3C5Yx7...`
+  - **Master Private Key `xprv9s21ZrQH143K3C5Yx7...` (and Chain Code)**
+    - **Spending Wallet** (e.g., Path: m/44'/0'/0')
+      - **Everyday Expenses**
+        - Path: `m/44'/0'/0'/0/0`
+        - Private Key: `L1aW4aubDFB7yfras2S1mEUV...`
+        - Public Key: `04a34b...`
+        - Bitcoin Address: `1K1Tg1uRcavE7MPxw1SR8qhwqXGsGeQJ5J`
+      - **Fun Money for Gadgets**
+        - Path: `m/44'/0'/0'/0/1`
+        - Private Key: `KzZzRseK3vW1x...`
+        - Public Key: `045f7d...`
+        - Bitcoin Address: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
+      - **Travel Budget**
+        - Path: `m/44'/0'/0'/0/2`
+        - Private Key: `L5htzcdKPb4V...`
+        - Public Key: `04a3bc...`
+        - Bitcoin Address: `1FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5`
 
-  - **Spending Wallet** (e.g., Path: m/44'/0'/0') 
-    - **Everyday Expenses**
-      - Path: `m/44'/0'/0'/0/0`
-      - Private Key: `L1aW4aubDFB7yfras2S1mEUV...`
-      - Public Key: `04a34b...`
-      - Bitcoin Address: `1K1Tg1uRcavE7MPxw1SR8qhwqXGsGeQJ5J`
-    - **Fun Money for Gadgets**
-      - Path: `m/44'/0'/0'/0/1`
-      - Private Key: `KzZzRseK3vW1x...`
-      - Public Key: `045f7d...`
-      - Bitcoin Address: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
-    - **Travel Budget**
-      - Path: `m/44'/0'/0'/0/2`
-      - Private Key: `L5htzcdKPb4V...`
-      - Public Key: `04a3bc...`
-      - Bitcoin Address: `1FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5`
+    - **Business Wallet** (e.g., Path: m/44'/0'/1')
+      - **Client Payments**
+        - Path: `m/44'/0'/1'/0/0`
+        - Private Key: `L2pCjH4XTKJQ...`
+        - Public Key: `048c3d...`
+        - Bitcoin Address: `1GdX4fGQ8sD9KZw8UAhTgy4AbdEK3PE9T5`
+      - **Vendor Payments**
+        - Path: `m/44'/0'/1'/0/1`
+        - Private Key: `KwDiBf89QgGbjE...`
+        - Public Key: `043b1a...`
+        - Bitcoin Address: `1GKFij2meMwrhbzRNp4hJ5tLdy4sbb3R2p`
 
-  - **Business Wallet** (e.g., Path: m/44'/0'/1')
-    - **Client Payments**
-      - Path: `m/44'/0'/1'/0/0`
-      - Private Key: `L2pCjH4XTKJQ...`
-      - Public Key: `048c3d...`
-      - Bitcoin Address: `1GdX4fGQ8sD9KZw8UAhTgy4AbdEK3PE9T5`
-    - **Vendor Payments**
-      - Path: `m/44'/0'/1'/0/1`
-      - Private Key: `KwDiBf89QgGbjE...`
-      - Public Key: `043b1a...`
-      - Bitcoin Address: `1GKFij2meMwrhbzRNp4hJ5tLdy4sbb3R2p`
+    - **Savings Wallet** (e.g., Path: m/84'/0'/0') for Native SegWit
+      - **2026 Saving for Home Down Payment**
+        - Path: `m/84'/0'/0'/0/0`
+        - Private Key: `L3vPe6q84A3dGQ...`
+        - Public Key: `04d4ae...`
+        - Bitcoin Address: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwfqdwh`
+      - **2031 Car Fund**
+        - Path: `m/84'/0'/0'/0/1`
+        - Private Key: `KwK3rj3F2dJSh7...`
+        - Public Key: `0470e2...`
+        - Bitcoin Address: `bc1qq2zk0wjm6dd73h0c6lz4fs0ymf5uxf9xydg5ne`
+      - **Emergency Fund**
+        - Path: `m/84'/0'/0'/0/2`
+        - Private Key: `L4gTs32kPcHz...`
+        - Public Key: `04e3ac...`
+        - Bitcoin Address: `bc1qpy2vf2zvkv5h3l4h2pn8pjdkl34kjwe8nslme7`
 
-  - **Savings Wallet** (e.g., Path: m/84'/0'/0') for Native SegWit
-    - **2026 Saving for Home Down Payment**
-      - Path: `m/84'/0'/0'/0/0`
-      - Private Key: `L3vPe6q84A3dGQ...`
-      - Public Key: `04d4ae...`
-      - Bitcoin Address: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwfqdwh`
-    - **2031 Car Fund**
-      - Path: `m/84'/0'/0'/0/1`
-      - Private Key: `KwK3rj3F2dJSh7...`
-      - Public Key: `0470e2...`
-      - Bitcoin Address: `bc1qq2zk0wjm6dd73h0c6lz4fs0ymf5uxf9xydg5ne`
-    - **Emergency Fund**
-      - Path: `m/84'/0'/0'/0/2`
-      - Private Key: `L4gTs32kPcHz...`
-      - Public Key: `04e3ac...`
-      - Bitcoin Address: `bc1qpy2vf2zvkv5h3l4h2pn8pjdkl34kjwe8nslme7`
+    - **Retirement Wallet** (e.g., Path: m/49'/0'/0')
+      - **2050 Retirement Fund**
+        - Path: `m/49'/0'/0'/0/0`
+        - Private Key: `L5hfds9PRg2e...`
+        - Public Key: `046ab1...`
+        - Bitcoin Address: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
+      - **Inheritance Fund**
+        - Path: `m/49'/0'/0'/0/1`
+        - Private Key: `L6G2h8s9FrX2...`
+        - Public Key: `0492bd...`
+        - Bitcoin Address: `3QJmV3qfvL9SuYo34YihAf3sRCW3qSinyC`
 
-  - **Retirement Wallet** (e.g., Path: m/49'/0'/0')
-    - **2050 Retirement Fund**
-      - Path: `m/49'/0'/0'/0/0`
-      - Private Key: `L5hfds9PRg2e...`
-      - Public Key: `046ab1...`
-      - Bitcoin Address: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
-    - **Inheritance Fund**
-      - Path: `m/49'/0'/0'/0/1`
-      - Private Key: `L6G2h8s9FrX2...`
-      - Public Key: `0492bd...`
-      - Bitcoin Address: `3QJmV3qfvL9SuYo34YihAf3sRCW3qSinyC`
-
-  - **Donations Wallet** (e.g., Path: m/44'/0'/2')
-    - **Charity Donations**
-      - Path: `m/44'/0'/2'/0/0`
-      - Private Key: `K1kRf3tG4j7f...`
-      - Public Key: `04c3f1...`
-      - Bitcoin Address: `1FcbB6Nw23L8Gd6aGr5AbK8BBDsN7BBRaS`
-    - **Community Fund**
-      - Path: `m/44'/0'/2'/0/1`
-      - Private Key: `K9g2Rf8uJ6h9...`
-      - Public Key: `04c8f3...`
-      - Bitcoin Address: `1Eo4uJfW8th5z7BD2X9ZcHSTQ5H3d7KyM`
+    - **Donations Wallet** (e.g., Path: m/44'/0'/2')
+      - **Charity Donations**
+        - Path: `m/44'/0'/2'/0/0`
+        - Private Key: `K1kRf3tG4j7f...`
+        - Public Key: `04c3f1...`
+        - Bitcoin Address: `1FcbB6Nw23L8Gd6aGr5AbK8BBDsN7BBRaS`
+      - **Community Fund**
+        - Path: `m/44'/0'/2'/0/1`
+        - Private Key: `K9g2Rf8uJ6h9...`
+        - Public Key: `04c8f3...`
+        - Bitcoin Address: `1Eo4uJfW8th5z7BD2X9ZcHSTQ5H3d7KyM`
