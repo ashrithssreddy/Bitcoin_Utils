@@ -13,6 +13,8 @@ Each section in the derivation path, separated by slashes (`/`), specifies a dif
 - **0'**: designates the account number.
 - **0/0**: further defines the type (external/internal) and address index.
 
+![BTC Derivation Path](https://thebitcoinmanual.com/wp-content/uploads/2022/08/btc-derivation-path-1.png)
+
 ## Master (m)
 
 - **Value:** Always `m`
