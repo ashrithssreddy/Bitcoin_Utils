@@ -40,3 +40,49 @@ for i in range(num_children):
 for index, keys in child_keys.items():
     print(f"Child Key {index + 1} (Private): {keys['private_key']}")
     print(f"Child Key {index + 1} (Public): {keys['public_key']}")
+
+#### Public Addresses
+def hash160(data):
+    """RIPEMD-160(SHA-256(data))"""
+    sha256 = hashlib.sha256(data).digest()
+    ripemd160 = hashlib.new('ripemd160')
+    ripemd160.update(sha256)
+    return ripemd160.digest()
+
+def checksum(data):
+    """Calculate the checksum for a given data."""
+    return hashlib.sha256(hashlib.sha256(data).digest()).digest()[:4]
+
+def public_key_to_p2pkh_address(public_key):
+    """Generate a P2PKH (legacy) address from a public key."""
+    prefix = b'\x00'  # Mainnet prefix for P2PKH addresses
+    pubkey_hash = hash160(public_key)
+    address = prefix + pubkey_hash
+    return base58.b58encode(address + checksum(address)).decode()
+
+def public_key_to_p2sh_p2wpkh_address(public_key):
+    """Generate a P2SH-P2WPKH (nested SegWit) address from a public key."""
+    prefix = b'\x05'  # Mainnet prefix for P2SH addresses
+    witness_program = b'\x00\x14' + hash160(public_key)
+    address = prefix + hash160(witness_program)
+    return base58.b58encode(address + checksum(address)).decode()
+
+def public_key_to_bech32_address(public_key):
+    """Generate a Bech32 (native SegWit) address from a public key."""
+    import bech32
+    witness_program = hash160(public_key)
+    return bech32.encode("bc", 0, witness_program)
+
+# Generate and Print Addresses for Each Child Public Key
+print("\nGenerated Bitcoin Addresses:\n")
+for index, keys in child_keys.items():
+    public_key_bytes = bytes.fromhex(keys['public_key'])
+    p2pkh_address = public_key_to_p2pkh_address(public_key_bytes)
+    p2sh_p2wpkh_address = public_key_to_p2sh_p2wpkh_address(public_key_bytes)
+    bech32_address = public_key_to_bech32_address(public_key_bytes)
+
+    print(f"Child Key {index + 1} Addresses:")
+    print(f"  P2PKH Address (Legacy): {p2pkh_address}")
+    print(f"  P2SH-P2WPKH Address (Nested SegWit): {p2sh_p2wpkh_address}")
+    print(f"  Bech32 Address (Native SegWit): {bech32_address}")
+    print()
