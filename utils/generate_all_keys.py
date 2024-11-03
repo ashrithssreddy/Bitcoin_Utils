@@ -25,3 +25,14 @@ print("Master Chain Code (hex):", master_key.ChainCode().hex(), "\n")
 #### Extended Private Key (xPrv)
 print("Extended Private Key (xPrv):", master_key.ExtendedKey(private=True), "\n")
 
+#### Child Private/Public Keys
+# Generate and store Child Private and Public Keys for the first few indices
+num_children = 5  # Adjust this number to generate more child keys
+child_keys = {}
+for i in range(num_children):
+    child_key = master_key.ChildKey(i)
+    child_keys[i] = {
+        "private_key": child_key.WalletImportFormat(),
+        "public_key": child_key.PublicKey().hex()
+    }
+
