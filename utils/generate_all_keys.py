@@ -21,3 +21,7 @@ print("Binary Seed (hex):", binary_seed.hex(), "\n") # hexadecimal format for re
 master_key = BIP32Key.fromEntropy(binary_seed)
 print("Master Private Key (WIF):", master_key.WalletImportFormat(), "\n")
 print("Master Chain Code (hex):", master_key.ChainCode().hex(), "\n")
+
+#### Extended Private Key (xPrv)
+print("Extended Private Key (xPrv):", master_key.ExtendedKey(private=True), "\n")
+
