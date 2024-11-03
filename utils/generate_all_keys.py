@@ -36,3 +36,7 @@ for i in range(num_children):
         "public_key": child_key.PublicKey().hex()
     }
 
+# Print the collected child keys
+for index, keys in child_keys.items():
+    print(f"Child Key {index + 1} (Private): {keys['private_key']}")
+    print(f"Child Key {index + 1} (Public): {keys['public_key']}")
