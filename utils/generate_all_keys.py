@@ -3,9 +3,55 @@ from bip32utils import BIP32Key
 import hashlib
 import base58
 
-# Seed phrase
-seed_phrase = "oxygen business lecture cream sad write vote fly rate also ozone type"
+def generate_valid_seed_phrase():
+    """
+    Generate a valid BIP-39 seed phrase.
+    
+    Returns:
+        str: A valid 12-word BIP-39 seed phrase.
+    """
+    mnemo = Mnemonic("english")
+    seed_phrase = mnemo.generate(strength=128)  # Generates a 12-word seed phrase
+    return seed_phrase
+
+def validate_seed_phrase(seed_phrase):
+    """
+    Validate a BIP-39 seed phrase for correct word count, valid words, and checksum.
+    
+    Args:
+        seed_phrase (str): The BIP-39 seed phrase to validate.
+    
+    Returns:
+        None: If the seed phrase is valid.
+    
+    Raises:
+        ValueError: If the seed phrase is invalid.
+    """
+    mnemo = Mnemonic("english")
+    seed_words = seed_phrase.split()
+
+    # Step 1: Validate word count (must be 12, 15, 18, 21, or 24)
+    valid_word_counts = [12, 15, 18, 21, 24]
+    if len(seed_words) not in valid_word_counts:
+        raise ValueError(f"Invalid word count. Seed phrase must be one of the following word counts: {valid_word_counts}.")
+    
+    # Step 2: Validate each word in the seed phrase is a valid BIP-39 word
+    bip39_wordlist = mnemo.wordlist
+    invalid_words = [word for word in seed_words if word not in bip39_wordlist]
+    
+    if invalid_words:
+        raise ValueError(f"Invalid words in seed phrase: {', '.join(invalid_words)}. Ensure all words are valid BIP-39 words.")
+    
+    # Step 3: Validate the checksum
+    if not mnemo.check(seed_phrase):
+        raise ValueError("Invalid BIP-39 seed phrase. Checksum does not match.")
+
+#### Seed phrase ####
+seed_phrase = generate_valid_seed_phrase()
+# seed_phrase = "oxygen business lecture cream sad write vote fly rate also ozone type"
+passphrase = ""  # Optional passphrase (can be left blank)
 print("Seed:", seed_phrase, "\n")
+validate_seed_phrase(seed_phrase)
 
 #### Binary Seed
 # Initialize the Mnemonic object
