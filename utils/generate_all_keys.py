@@ -57,7 +57,7 @@ def validate_seed_phrase(seed_phrase):
 seed_phrase = generate_valid_seed_phrase()
 # seed_phrase = "oxygen business lecture cream sad write vote fly rate also ozone type"
 passphrase = ""  # Optional passphrase (can be left blank)
-print("Seed:", seed_phrase, "\n")
+print(f"\033[31mSeed: {seed_phrase}\033[0m\n")
 validate_seed_phrase(seed_phrase)
 
 #### Binary Seed
