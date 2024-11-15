@@ -2,6 +2,7 @@ from mnemonic import Mnemonic
 from bip32utils import BIP32Key
 import hashlib
 import base58
+import qrcode
 
 def generate_valid_seed_phrase():
     """
@@ -85,6 +86,7 @@ for i in range(num_children):
 # Print the collected child keys
 for index, keys in child_keys.items():
     print(f"Child Key {index + 1} (Private): {keys['private_key']}")
+    qrcode.make(keys['private_key']).show()
     print(f"Child Key {index + 1} (Public): {keys['public_key']}")
 
 #### Public Addresses
@@ -126,6 +128,7 @@ for index, keys in child_keys.items():
     p2pkh_address = public_key_to_p2pkh_address(public_key_bytes)
     p2sh_p2wpkh_address = public_key_to_p2sh_p2wpkh_address(public_key_bytes)
     bech32_address = public_key_to_bech32_address(public_key_bytes)
+    qrcode.make(bech32_address).show()
 
     print(f"Child Key {index + 1} Addresses:")
     print(f"  P2PKH Address (Legacy): {p2pkh_address}")
