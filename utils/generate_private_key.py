@@ -12,10 +12,6 @@ def generate_valid_seed_phrase():
     seed_phrase = mnemo.generate(strength=128)  # Generates a 12-word seed phrase
     return seed_phrase
 
-# Example usage
-valid_seed_phrase = generate_valid_seed_phrase()
-print(f"Generated Valid Seed Phrase: {valid_seed_phrase}")
-
 def validate_seed_phrase(seed_phrase):
     """
     Validate a BIP-39 seed phrase for correct word count, valid words, and checksum.
@@ -73,7 +69,9 @@ def generate_private_key_from_seed(seed_phrase, passphrase=""):
     return private_key.to_wif()
 
 # Example usage:
+seed_phrase = generate_valid_seed_phrase()
 seed_phrase = "oxygen business lecture cream sad write vote fly rate also ozone type"  # Replace with your actual seed phrase
+print(f"Generated Valid Seed Phrase: {seed_phrase}")
 passphrase = ""  # Optional passphrase (can be left blank)
 
 try:
