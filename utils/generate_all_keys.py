@@ -1,9 +1,13 @@
+#### Setup ####
 from mnemonic import Mnemonic
 from bip32utils import BIP32Key
 import hashlib
 import base58
 import qrcode
+%config NotebookNotary.db_file = ':memory:' # prevents saving logs and checkpoints locally 
+%autosave 0  # Turns off autosave
 
+#### Seed phrase ####
 def generate_valid_seed_phrase():
     """
     Generate a valid BIP-39 seed phrase.
@@ -46,8 +50,10 @@ def validate_seed_phrase(seed_phrase):
     # Step 3: Validate the checksum
     if not mnemo.check(seed_phrase):
         raise ValueError("Invalid BIP-39 seed phrase. Checksum does not match.")
+    
+    # If all checks pass, print a success message
+    print("Seed phrase is valid.")
 
-#### Seed phrase ####
 seed_phrase = generate_valid_seed_phrase()
 # seed_phrase = "oxygen business lecture cream sad write vote fly rate also ozone type"
 passphrase = ""  # Optional passphrase (can be left blank)
