@@ -3,7 +3,8 @@ import requests
 
 def get_balance_from_seed(seed_phrase, network='bitcoin'):
     """
-    Derives addresses from a BIP44 seed phrase and calculates the total balance by querying UTXOs.
+    Derives Bech32 (bc1) native SegWit addresses from a BIP44 seed phrase
+    and calculates the total balance by querying UTXOs.
 
     Args:
         seed_phrase (str): The BIP39 seed phrase.
@@ -15,7 +16,7 @@ def get_balance_from_seed(seed_phrase, network='bitcoin'):
     # Initialize a BIP44 wallet from the seed phrase
     wallet = Wallet(seed_phrase)
 
-    # Define the derivation path components (m/44'/0'/0'/0/i for Bitcoin mainnet)
+    # Define the derivation path components for native SegWit (m/84'/0'/0'/0/i)
     account = 0  # Default account
     change = False  # Use receiving addresses (not change addresses)
 
@@ -23,8 +24,8 @@ def get_balance_from_seed(seed_phrase, network='bitcoin'):
 
     # Loop through the first 10 addresses (adjust as needed)
     for i in range(10):
-        # Generate address for the derivation path m/44'/0'/0'/0/i
-        address = wallet.get_address(account=account, change=change, address_index=i, network=network)
+        # Generate native SegWit Bech32 address for the derivation path m/84'/0'/0'/0/i
+        address = wallet.get_address(account=account, change=change, address_index=i, network=network, address_type="bech32")
         print(f"Checking balance for address: {address}")
 
         # Fetch UTXOs from Blockstream API
