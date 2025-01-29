@@ -50,3 +50,7 @@ The following infographic further illustrates how Bitcoin stands on the shoulder
 
 ![Infographic 2](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*jPx1NhYI6qu3NEjj)
 
+## 5. Conclusion
+From barter to Bitcoin, money has continually evolved to meet the needs of an advancing economy. _Bitcoin is not just another step—it represents the first truly decentralized, incorruptible form of global money_. As emphasized in _Broken Money_, Bitcoin is the logical endpoint of monetary evolution, offering a solution to fiat’s inherent weaknesses.
+
+The financial world is shifting. Understanding where we came from helps us recognize the _inevitability of decentralized sound money_ in the future.
