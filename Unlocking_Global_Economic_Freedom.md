@@ -33,3 +33,13 @@ Fiat currencies lose value over time due to inflationary policies. Bitcoin’s p
 
 ### 3.3 Surveillance vs. Privacy  
 Governments use financial systems to track and control individuals' spending. While Bitcoin transactions are recorded on a public ledger, privacy-enhancing techniques like CoinJoin and Lightning Network can help preserve financial anonymity.
+
+## 4. Real-World Case Studies  
+### 4.1 Venezuela & Hyperinflation  
+Bitcoin has provided Venezuelans an escape from hyperinflation and government capital controls, allowing them to store value and conduct commerce outside the failing local currency.
+
+### 4.2 Nigeria & Protest Movements  
+During the #EndSARS protests, Nigerian activists turned to Bitcoin after authorities froze bank accounts used to fund the movement, highlighting Bitcoin’s role as censorship-resistant money.
+
+### 4.3 El Salvador’s Bitcoin Experiment  
+El Salvador became the first country to adopt Bitcoin as legal tender, aiming to boost financial inclusion and reduce remittance fees for its large overseas workforce.
