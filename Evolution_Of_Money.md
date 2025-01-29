@@ -34,3 +34,19 @@ The internet age introduced **electronic banking, credit cards, and digital paym
 ### 2.7 Bitcoin: A New Monetary Paradigm
 (2008 - Future)  
 In 2008, _Satoshi Nakamoto_ introduced **Bitcoin**, combining decades of cryptographic research into a decentralized, **censorship-resistant, fixed-supply digital currency**. Unlike fiat, Bitcoin operates on **mathematical scarcity** (21 million cap) and removes intermediaries through a **peer-to-peer, permissionless network**.
+
+## 3. Bitcoin: Not a Serendipitous Invention
+Bitcoin was not created in isolation; it emerged from _four decades of research_ in cryptography, digital scarcity, and economic theory. The following timeline illustrates Bitcoin’s intellectual and technological lineage:
+
+- **1980s**: Concepts of digital cash (David Chaum’s DigiCash)
+- **1990s**: Cypherpunk movement & cryptographic advancements
+- **2000s**: Hashcash, Bit Gold, and B-Money proposals (Adam Back, Nick Szabo, Wei Dai)
+- **2008**: _Bitcoin Whitepaper_ released by Satoshi Nakamoto
+
+![Infographic 1](https://pbs.twimg.com/media/ELVxmYsVUAQR4fZ?format=png&name=4096x4096)
+
+## 4. Visualizing Bitcoin’s Evolution
+The following infographic further illustrates how Bitcoin stands on the shoulders of decades of research:
+
+![Infographic 2](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*jPx1NhYI6qu3NEjj)
+
