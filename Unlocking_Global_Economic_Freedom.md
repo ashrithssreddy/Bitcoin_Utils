@@ -24,3 +24,12 @@ Over 1.4 billion people globally lack access to traditional banking systems. Bit
 ### 2.5 Resistance to Censorship & Government Overreach  
 Governments and banks often impose restrictions on financial transactions, limiting freedom of expression and commerce. Bitcoin’s decentralized nature prevents censorship, allowing individuals to transact freely regardless of political or social pressures.
 
+## 3. Bitcoin vs. Traditional Financial Systems  
+### 3.1 Centralized Control vs. Decentralization  
+Traditional financial systems are controlled by central banks and governments, making them susceptible to corruption, mismanagement, and monetary debasement. Bitcoin operates on a decentralized network, ensuring that no single entity can manipulate the system.
+
+### 3.2 Inflationary Policies vs. Fixed Supply  
+Fiat currencies lose value over time due to inflationary policies. Bitcoin’s predictable issuance and finite supply protect against such depreciation, preserving purchasing power.
+
+### 3.3 Surveillance vs. Privacy  
+Governments use financial systems to track and control individuals' spending. While Bitcoin transactions are recorded on a public ledger, privacy-enhancing techniques like CoinJoin and Lightning Network can help preserve financial anonymity.
