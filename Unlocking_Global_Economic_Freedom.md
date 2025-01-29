@@ -43,3 +43,13 @@ During the #EndSARS protests, Nigerian activists turned to Bitcoin after authori
 
 ### 4.3 El Salvador’s Bitcoin Experiment  
 El Salvador became the first country to adopt Bitcoin as legal tender, aiming to boost financial inclusion and reduce remittance fees for its large overseas workforce.
+
+## 5. Challenges and Misconceptions  
+### 5.1 Energy Consumption Concerns  
+Bitcoin mining is often criticized for high energy use. However, a growing portion of mining utilizes renewable energy, and Bitcoin’s security justifies its energy expenditure compared to the inefficiencies of traditional financial systems.
+
+### 5.2 Price Volatility  
+Bitcoin’s volatility is a concern for many, but long-term adoption and increased market maturity are reducing extreme fluctuations over time.
+
+### 5.3 Government Resistance  
+Many governments resist Bitcoin adoption due to its challenge to centralized control. However, regulatory clarity and wider adoption can lead to greater acceptance over time.
