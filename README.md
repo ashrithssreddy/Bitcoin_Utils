@@ -32,7 +32,7 @@ This repository serves as a comprehensive suite of data science utilities and to
 ### **Installation**
 
 ```bash
-git clone https://github.com/your_username/bitcoin_utils.git
+git clone https://github.com/ashrithssreddy/bitcoin_utils.git
 cd bitcoin_utils
 pip install -r requirements.txt
 ```
