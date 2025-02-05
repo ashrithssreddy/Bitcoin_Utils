@@ -1,0 +1,3 @@
+coinbase:
+  name: "api_key_1"    # The nickname or name you see in your Coinbase API settings
+  key_id: "a2362d69-8598-4e94-9b23-d9ab6c3895d1"    # The Key ID provided by Coinbase
