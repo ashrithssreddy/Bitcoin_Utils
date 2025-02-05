@@ -167,3 +167,4 @@ cython_debug/
 #.idea/
 
 personal_notes.txt
+config.yaml
